@@ -189,6 +189,32 @@ main {
 
 }
 
+/* ================= CERTIFICATE GRID ================= */
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.certificate-grid h3 {
+  grid-column: 1 / -1;
+}
+
+/* mobile */
+@media (max-width:768px){
+
+  .certificate-grid{
+    grid-template-columns: 1fr;
+    gap: 20px; /* menjaga jarak antar card */
+  }
+
+  .certificate-grid .card{
+    margin-bottom: 0; /* supaya tidak double spacing */
+  }
+
+}
+
 /* ================= CARD ================= */
 
 .card {
